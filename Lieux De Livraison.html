@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Stylla.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="js/bootstrap.min.js">
+  <title>LIEUX DE Livraison</title>
+</head>
+<script>
+  function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('c5').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 1000);
+  }
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
+  (function () {
+        var setting = {"height":1681,"width":1733,"zoom":13,"queryString":"La Manouba, Tunisie","place_id":"ChIJUbaXaWoy_RIRh1S_OLlJGa4","satellite":true,"centerCoord":[36.80988597381081,10.077660104417475],"cid":"0xae1949b938bf5487","lang":"fr","cityUrl":"/tunisia/manouba-280129","cityAnchorText":"Carte de Manūbah, Tunisia 2, Tunisie","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"477861"};
+        var d = document;
+        var s = d.createElement('script');
+        s.src = 'https://1map.com/js/script-for-user.js?embed_id=477861';
+        s.async = true;
+        s.onload = function (e) {
+          window.OneMap.initMap(setting)
+        };
+        var to = d.getElementsByTagName('script')[0];
+        to.parentNode.insertBefore(s, to);
+      })();
+</script>
+<body>
+  <div class="grid-container">
+    <div class="grid-item1">
+      <div class="nested"><img class="img" src="img/images.jpeg" alt="Forest" width="300" height="100">
+      </div>
+      <div class="nested"><img src="img/tel.jpeg" alt="Northern Lights" width="50" height="30">
+        <label for="" style="color: brown;">+21690392095</label>
+      </div>
+      <div class="nested"><img class="hover" src="img/time.png "alt="Mountains" width="50" height="30"> 
+        <label class="hover" for="hover" style="color: brown;">En Martinique, il est</label>
+        <label class="hover" for="" id="c5" style="color: brown;"></label>
+      </div>
+      
+      
+    </div>
+    <div class="grid-item2">
+      <nav>
+       <ul>
+         <li><a class="active" href="#home">Home</a></li>
+         <li><a href="Accueil.html">Accueil</a></li>
+         <li><a href="Contact.html">Contact</a></li>
+         <li><a href="ESPACE CLIENT.html">ESPACE Clients</a></li>
+         <li><a href="Lieux De Livraison.html">Lieux De Livraison</a></li>
+         <li><a href="NOTRE PARC.html">Notre Parc</a></li>
+       </ul>
+     </nav>
+    </div>
+    <div class="grid-item3-1">
+      <div><h1>Fort de France</h1>
+      <h6>voir détails</h6>
+      <h6>5 Route de Balata</h6>
+      <h6>Pont de Caine</h6>
+      <h6>97200 Fort de France</h6>
+      </div>
+
+      <div><h1>Aéroport</h1>
+        <h6>voir détails</h6>
+        <h6>BP 279</h6>
+        <h6>97232 Le Lamentin</h6>
+      </div>
+    </div>
+      <div class="grid-item4" style="width:100%; height: 350px; " >
+        <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+		      <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3">
+            
+          </div>
+      </div>
+    </div>   
+ <div class="footer-1">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-skype"></a>
+      <a href="#" class="fa fa-yahoo"></a>
+      
+
+  </div>
+    
+      
+  </div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Stylla.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="js/bootstrap.min.js">  <title> Contact</title>
+</head>
+<script>
+  function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('c5').innerHTML =
+      h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 1000);
+  }
+
+  function checkTime(i) {
+    if (i < 10) {
+      i = "0" + i
+    }; // add zero in front of numbers < 10
+    return i;
+  }
+</script>
+
+</head>
+
+<body onload="startTime()">
+  <div class="grid-container">
+    <div class="grid-item1">
+      <div class="nested"><img class="img" src="img/images.jpeg" alt="Forest" width="300" height="100">
+      </div>
+      <div class="nested"><img src="img/tel.png" alt="Northern Lights" width="50" height="30">
+        <label for="" style="color: brown;">+21690392095</label>
+      </div>
+      <div class="nested"><img class="hover" src="img/time.png " alt="Mountains" width="50" height="30">
+        <label class="hover" for="hover" style="color: brown;">En Martinique, il est</label>
+        <label class="hover" for="" id="c5" style="color: brown;"></label>
+      </div>
+
+
+    </div>
+    <div class="grid-item2">
+      <nav>
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="Accueil.html">Accueil</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="ESPACE CLIENT.html">ESPACE Clients</a></li>
+          <li><a href="Lieux De Livraison.html">Lieux De Livraison</a></li>
+          <li><a href="NOTRE PARC.html">Notre Parc</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="grid-item3">
+      <div class="bg-img1">
+        <form action="/action_page.php" class="container">
+          <h1>Nous contacter</h1>
+          <h3>Notre équipe sera ravi de vous accueillir dans notre agence.</h3>
+          9 septembre 2020
+          <table>
+            <tbody>
+              <tr style="height: auto; text-align: center;">
+                <td style="text-align: center;"><img style="text-align: start; border-width: 0px;"
+                    src="img/location.png" alt=""></td>
+                <td style="text-align: center;"><img style="border-width: 0px;"
+                    src="img/tel.png" alt=""></td>
+                <td style="text-align:center;"><img style="border-width: 0px;"
+                    src="img/heure.png" alt=""></td>
+              </tr>
+              <tr style="text-align: center;">
+                <td style="text-align: center;">
+                  <p><span>5 route de Balata Pont de Chaîne<span>&nbsp;</span></span></p>
+                  <p><span><span>97200 Fort-de-France</span></span></p>
+                  <p><span><span>Martinique</span></span></p>
+                </td>
+                <td><strong>Tél. :</strong>
+                  <span>
+                    <span>&nbsp;</span>
+                  </span><a data-effilab-message="Afficher le téléphone" data-effilab-action="display_phone"></a>
+                  <span>96 70 14 77</span>
+                  </a><span><span>&nbsp;</span></span><br id="1315945811">
+                  <strong>Mobile :</strong>
+                  <span><span>&nbsp;</span>
+                  </span><a data-effilab-message="Afficher le fax" data-effilab-action="display_phone">
+                    <span>96 82 49 22</span></a>
+                  <span><span>&nbsp;</span></span><br>Mobile :</strong>
+                  <span>
+                    <span>&nbsp;</span>
+                  </span><a data-effilab-message="Afficher le mobile" data-effilab-action="display_phone">
+                    <span> 96 22 70 38</span></a></td>
+                <td>Horaires d'intervention<br>tous les jours<br>5h00 - 23h30</td>
+              </tr>
+
+
+              <form name="form" method="post" action="https://www.jlocation972.com/contact-s1255.html?action=envoi">
+                <tr>
+                  <td>
+                    <font color="red">Nom :*</font>
+                  </td>
+                  <td><input type="text" name="Nom" value=""></td>
+                  <td> Prénom :</td>
+                  <td><input type="text" name="Prénom" value=""></td>
+                </tr>
+                <tr>
+                  <td>
+                    <libelle>Téléphone : <font color="red">*</font>
+                    </libelle>
+                  <td><input type="text" name="Tel" value=""></td>
+                  <td>
+                    Fax :</td>
+                  <td><input type="text" name="Fax" value=""><br></td>
+                </tr>
+                <td>
+                  Société :</td>
+                <td> <input type="text" name="Societe" value=""></td>
+                <tr>
+                  <td>
+                    Adresse :</td>
+                  <td><input type="text" name="Adresse" value=""></td>
+                  <td> Code Postal :</td>
+                  <td> <input type="text" name="CP" value=""></td>
+                </tr>
+                <tr>
+                  <td> Ville :</td>
+
+                  <td> <input type="text" name="Ville" value=""></td>
+                  <br>
+                  <td> Email : <font color="red">*</font>
+                  </td>
+                  <td><input type="text" name="Mail" value=""></td>
+                </tr>
+                <tr>
+                  <td> Destinataire : <font color="red">*</font>
+                  </td>
+
+                  <td> <select name="contact_agence" class="select_agence" onchange="load_form();">
+                      <option value="">Choix du destinataire :</option>
+                      <option value="-1">Gestionnaire du site</option>
+                      <option value="865">Agence Fort de france</option>
+                    </select></td>
+                </tr>
+
+                <tr>
+                  <td> Message précis : <font color="red">*</font>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <textarea name="Message" rows="" cols="">
+                        </textarea></td>
+                </tr>
+
+                <tr>
+                  <td>
+
+                    <img src="https://www.jlocation972.com/modules/antispam.php?name=contact&amp;strlen=4"
+                      alt="anti-flood"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" name="chaine_saisie"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="button" class="_bouton" onclick="verif_form();" value="Valider"><br>
+                    &nbsp; Les champs mentionnés en <font color="red">*</font> sont obligatoires.<br><br>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+          <p>&nbsp;</p>
+      </div>
+      </form>
+    </div>
+
+      <div class="grid-item4" style="width:100%; height: 350px; ">
+        <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+          <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+        </div>
+      </div>
+      <div class="footer-1">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-skype"></a>
+        <a href="#" class="fa fa-yahoo"></a>
+
+      </div>
+
+    
+  </div>
+</body>
+
+</html>

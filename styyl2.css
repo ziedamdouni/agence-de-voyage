@@ -1,0 +1,919 @@
+/**{
+  border-radius: 1px;
+  background-color: #e0d7d7;
+}
+.grid-container {
+  display: grid;
+  border: 2px solid rgb(206, 198, 198);
+  border-radius: 0px;
+  background-color: #dfe4dc;
+  grid-template-columns: repeat(3,1fr) ;
+  grid-column-gap: 1px;
+  grid-row-gap: 2px;
+  margin: 1px;
+  width: 100%;
+  padding: 1px;
+  
+}
+.grid-item1{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: 1px;
+  padding: 1px;
+}
+.grid-item2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 2;
+  margin: 1px;
+  padding: 1px;
+
+}
+.grid-item3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 3;
+ }
+.grid-item4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 4;
+
+}
+.grid-item5 {
+  grid-column-start: 1;
+  grid-column-end:4;
+  grid-row-start: 6;
+  grid-row-end: 5;
+
+}.grid-item6 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 6;
+
+}
+.grid-item7 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 8;
+  grid-row-end: 7;
+}
+.grid-item8 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 9;
+  grid-row-end: 8;
+}
+.grid-item9{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 10;
+  grid-row-end: 9;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  
+}
+
+li {
+  float:inline-end;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.hover,li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}*/
+/*#violet : #817cb4 rouge : #c8475c vert :#36b1c4 violet clair : #afadcb*/
+body {
+  font-family: "Trebuchet MS",Verdana;
+  font-size: 15px;
+  margin: 0px;
+}
+
+h1,.titre, .google_map h2, .articles_liste h1, ._titre, ._titre a, ._titre a:visited {
+  color: #c8475c;
+  margin-bottom: 10px;
+}
+
+h2, .sous_titre {
+  color: #817cb4;
+}
+
+h3 {
+  color: #afadcb;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #817cb4;
+}
+
+a:hover {
+  color: #c8475c;
+}
+
+.module, .header_in, .footer_in, .content_1300 {
+  min-width: 340px;
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+}
+
+#page_accueil .main_in, #page_statique_1266 .main_in {
+  max-width: initial;
+}
+
+.main_in {
+  min-height: 550px;
+}
+
+/*g�n�ral*/
+header {
+  background: transparent url(fond2.png) repeat-x 0px 0px;
+}
+
+.header {
+  background: transparent url(logo.png) no-repeat 0px 0px;
+  width: 100%;
+  height: 130px;
+}
+
+.fond.rouge {
+  background-color: #c8475c;
+  color: #ffffff;
+  padding: 20px 0px;
+  border-top: 7px solid #29ADC2;
+  border-bottom: 7px solid #29ADC2;
+}
+
+.fond.gris {
+  background-color: #f2f2f2;
+  color: #000000;
+  padding: 20px 0px;
+}
+
+footer {
+  border-top: 5px solid #817cb4;
+  padding-top: 20px;
+  clear: both;
+  margin-top: 10px;
+}
+
+.titre_rouge {
+  color: #c8475c;
+}
+
+.gauche {
+  float: left;
+  width: 25%;
+}
+
+.centre {
+  float: left;
+  width: 72%;
+  margin-left: 3%;
+}
+
+.num_tel {
+  position: absolute;
+  font-size: 2.2em;
+  top: 3px;
+  left: 42%;
+  background: transparent url(tel.png) no-repeat 0px 0px;
+  padding-left: 85px;
+  line-height: 85px;
+}
+
+.heure {
+  position: absolute;
+  font-size: 1.6em;
+  top: 21px;
+  left: 65%;
+  color: #c8475c;
+  background: transparent url(heure.png) no-repeat 0px center;
+  padding-left: 50px;
+  line-height: 50px;
+}
+
+.heure .titre {
+  float: left;
+  margin-right: 5px;
+}
+
+.heure .timer_heure {
+  display: inline;
+}
+
+input, select, textarea {
+  color: #817cb4;
+}
+
+input,select,textarea {
+  border: 0px;
+  height: 25px;
+  padding-left: 4px;
+  box-shadow: 2px 3px 7px -1px #817cb4;
+  background-color: #FFFFF;
+  color: #817cb4;
+  font-size: 15px;
+  margin: 0;
+}
+
+input[type='checkbox'], input[type='radio'] {
+  box-shadow: none;
+  height: auto;
+}
+
+input[type='button'],input[type='submit'],._bouton {
+  box-shadow: 1px 1px 0 #817cb4;
+  background: #c8475c none;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  vertical-align: center;
+  line-height: 35px;
+  height: 35px;
+  cursor: pointer;
+  padding: 0px 15px;
+  ;margin-top: 10px;
+  -webkit-transition-property: background-color;
+  -webkit-transition-duration: 2s;
+  -moz-transition-property: background-color;
+  -moz-transition-duration: 2s;
+  transition-property: background-color;
+  transition-duration: 2s;
+  font-size: 13px;
+  font-weight: bold;
+  border: 0px;
+}
+
+input[type='button']:hover,input[type='submit']:hover,._bouton:hover {
+  background-color: #817cb4;
+  color: #FFFFFF;
+  border: 0px;
+}
+
+p {
+  margin: 0;
+  padding: 0
+}
+
+input[type='text'],input[type='texte'] {
+  padding: 2px;
+  padding-left: 5px;
+}
+
+/*A CACHER*/
+.actualites_liste h2, .actualites_liste .date,.actualites_liste .titre,.reservation_form ._titre {
+  display: none;
+}
+
+/*menu*/
+.menu_portail {
+  float: right;
+  margin-top: -46px;
+}
+
+#menu {
+  border: 0px;
+  font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow: auto;
+}
+
+#menu a {
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#menu a:hover {
+  color: #333333;
+}
+
+#menu li {
+  float: left;
+  width: auto;
+  list-style-type: none;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.menu_portail .separateur {
+  display: none;
+}
+
+.bx-pager-item {
+  display: none;
+}
+
+/*modules*/
+.menu_bas {
+  width: 100%;
+  text-align: center;
+}
+
+.menu_bas .menu_item {
+  display: inline;
+  margin: 0px 20px;
+}
+
+.menu_bas a {
+  color: #817cb4;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.menu_bas a:hover {
+  color: #c8475c;
+}
+
+.bottom_micropulse {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.bottom_micropulse a {
+  color: #444444;
+  font-size: 12px;
+}
+
+.actualites_liste {
+  max-height: 886px;
+}
+
+.actualites_liste .rendu h2 {
+  display: block;
+  position: absolute;
+  margin-top: 10px;
+  background-color: #FFFFFF;
+  opacity: 0.7;
+  padding: 10px 20px;
+  width: 80%;
+  margin-left: 5%;
+  font-size: 2.5em;
+  color: #36b1c4;
+}
+
+.reassurance {
+  overflow: auto;
+  text-align: center;
+}
+
+.reassurance h2 {
+  margin-bottom: 35px;
+}
+
+.reassurance .item {
+  float: left;
+  width: 29%;
+  text-align: center;
+  padding: 0px 2%;
+}
+
+.reassurance .image {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.reassurance .item_service .image {
+  background: transparent url(icone_tel.png) no-repeat 0px 0px;
+  background-size: cover;
+}
+
+.reassurance .item_livraison .image {
+  background: transparent url(icone_livraison.png) no-repeat 0px 0px;
+  background-size: cover;
+}
+
+.reassurance .item_voitures .image {
+  background: transparent url(icone_voiture.png) no-repeat 0px 0px;
+  background-size: cover;
+}
+
+.reassurance .sous_titre {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.reassurance h2 {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.owl-carousel {
+  position: relative;
+  width: 100%;
+}
+
+h2.vehicules {
+  margin-top: 30px;
+}
+
+.fond_vehicules {
+  margin-left: 10%;
+  margin-right: 10%;
+  background: transparent url(fond-1.png) repeat-x 0px 23px;
+}
+
+.categories_defilant {
+  max-width: 1300px;
+  background-color: #afadcb;
+  overflow: hidden;
+  ;padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 63px;
+}
+
+.categories_defilant h2 {
+  display: none;
+}
+
+.categories_defilant .item {
+  padding: 10px;
+  height: 270px;
+  background-color: #FFFFFF;
+  width: 75%;
+}
+
+.categories_defilant .owl-carousel {
+  margin-left: 2%;
+  margin-right: 2%
+}
+
+.categories_defilant .owl-carousel .owl-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.categories_defilant .owl-carousel .owl-item .photo {
+  height: 150px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.categories_defilant .owl-carousel .titre {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #c8475c;
+  border: none;
+}
+
+.categories_defilant .prix_appel {
+  font-size: 1.1em;
+  width: 65%;
+  float: right;
+  color: #c8475c;
+  text-align: center;
+}
+
+.categories_defilant .prix_appel .prix {
+  color: #817cb4;
+  font-size: 1.4em;
+}
+
+/*.jar_vehicules .owl-item{border:2px solid #01D0E2;height:250px;padding:10px;width:23% !important;margin-left:1% !important;margin-right:1% !important;}*/
+.decouvrir {
+  margin: auto;
+}
+
+.decouvrir .item {
+  max-width: 1000px;
+  margin: auto;
+  clear: both;
+  overflow: auto;
+}
+
+.decouvrir .item .image, .decouvrir .item .sous_titre {
+  width: 50%;
+  height: 250px;
+}
+
+.decouvrir .item_1 .image {
+  background: transparent url(adecouvrir1.jpg) no-repeat right 0px;
+  float: left;
+  background-size: cover;
+}
+
+.decouvrir .item_2 .image {
+  background: transparent url(adecouvrir2.jpg) no-repeat left 0px;
+  float: right;
+  background-size: cover;
+}
+
+.decouvrir .item_3 .image {
+  background: transparent url(adecouvrir3.jpg) no-repeat right 0px;
+  float: left;
+  background-size: cover;
+}
+
+.decouvrir .sous_titre {
+  color: #817cb4;
+  font-size: 2em;
+  line-height: 250px;
+  vertical-align: center;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+.decouvrir .sous_titre:hover {
+  color: #c8475c;
+}
+
+.decouvrir .item_1 .sous_titre, .decouvrir .item_3 .sous_titre {
+  float: right;
+}
+
+.decouvrir .item_2 .sous_titre {
+  float: left;
+}
+
+#page_contact .content_1300 {
+  background: transparent url(balata2.jpg) no-repeat 0px 0px;
+}
+
+.contact, #page_contact .articles_liste {
+  background-color: rgba(255,255,255,0.85);
+  margin: 0px 10%;
+  padding: 0 2%;
+  width: 76%;
+}
+
+.contact .col_double_2 select {
+  width: 100.5%;
+}
+
+.contact {
+  margin-bottom: 81px;
+}
+
+#page_contact .articles_liste {
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+#page_contact .articles_liste table {
+  width: 94%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+#page_contact .articles_liste td {
+  width: 33%;
+}
+
+#page_contact .articles_liste img {
+  width: 40px;
+}
+
+#page_contact .articles_liste h1, #page_contact .articles_liste h3 {
+  text-align: center;
+}
+
+.contact .anti_spam, .contact .valider {
+  margin-top: 0px;
+}
+
+.agences_liste .titre {
+  background: none;
+  font-size: 22px;
+}
+
+.agences_liste .item {
+  margin: 0px 2%;
+  width: 46%;
+  float: left;
+  clear: none;
+  margin-bottom: 20px;
+}
+
+.google_map {
+  clear: both;
+}
+
+.page_agences_liste .google_map h2 {
+  display: none;
+}
+
+/*MEMBRE*/
+.membre .titre {
+}
+
+#espace_client .fiche .reservation_lib, #espace_client .fiche .reservation_historique_lib {
+  color: #817cb4;
+}
+
+/*reservation*/
+.ui-widget-header {
+  background: none;
+  background-color: #817cb4;
+  border: 1px solid #817cb4;
+}
+
+.ui-widget-content {
+  color: #817cb4;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  background: none;
+  background-color: #afadcb;
+  border: 1px solid #afadcb;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  color: #c8475c;
+}
+
+.ui-datepicker-prev:hover, .ui-datepicker-next:hover {
+  border: 1px solid #c8475c;
+}
+
+#page_accueil .reservation_express, #page_statique_1266 .reservation_express {
+  position: absolute;
+  top: 630px;
+  margin-left: 27%;
+  background-color: #ffffff;
+  box-shadow: 5px 4px 3px #555555;
+  width: 400px;
+}
+
+#page_accueil .reservation_express, #page_statique_1266 .reservation_express {
+  padding: 30px;
+  padding-top: 18px;
+}
+
+#page_accueil .reservation_form ._titre, #page_statique_1266 .reservation_form ._titre {
+  display: block;
+}
+
+.reservation_express {
+  padding: 1%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-width: initial;
+}
+
+.reservation_express input, .reservation_express select, .reservation_express .liste_type {
+  color: #817cb4;
+}
+
+.reservation_express ._libelle {
+  min-width: 105px;
+  color: #c8475c;
+}
+
+.reservation_express .liste_type {
+  clear: none;
+  margin-top: 6px;
+}
+
+.reservation_express .liste_type input {
+  height: auto;
+  margin-right: 6px;
+}
+
+.reservation_express .km_estimes_encart {
+  display: none;
+}
+
+.reservation_express .categorie {
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.reservation_express .suivant_etape {
+  background: transparent url(valider.png) no-repeat -55px 0px;
+  color: transparent;
+  height: 90px;
+  width: 100%;
+  padding: 0px;
+}
+
+#page_accueil .reservation_express .suivant_etape, #page_statique_1266 .reservation_express .suivant_etape {
+  background: transparent url(valider.png) no-repeat center 0px;
+}
+
+.reservation_express .suivant_etape:hover {
+  box-shadow: none;
+}
+
+#forfait_box {
+  margin-bottom: 20px;
+}
+
+.reservation .tarif_ttc, .reservation_forfait .forfait_tarif_principal, .etape_precedente, ._sous_titre, .forfait_tarif_option_principal {
+  color: #817cb4;
+  font-weight: bold;
+}
+
+.reservation_famille .photo img {
+  min-width: 70%;
+}
+
+.forfait_options_choix_contenu .forfait_tarif_option_principal._libelle {
+  min-width: 10%;
+  text-align: right;
+}
+
+.form_option_obligatoire select {
+  min-width: 55px;
+}
+
+.reservation_famille .famille_tooltip_vehicule {
+  border-radius: 16px;
+  border: 1px solid #817cb4;
+  padding: 8px;
+}
+
+#reservation_fin .fin_libelle {
+  color: #c8475c;
+}
+
+#reservation_fin .recap_prix_total ._valeur {
+  color: #817cb4;
+  font-weight: bold;
+}
+
+.membre_encart {
+  display: none;
+}
+
+.page_categories_liste .articles_liste h1 {
+  text-align: center;
+}
+
+.categories .prix_appel .details, .categories_liste .prix_appel .details {
+  display: none;
+}
+
+.categories_liste .prix_appel, .categories .prix_appel {
+  color: #36b1c4;
+}
+
+@media only screen and (max-width: 1300px) {
+  .num_tel {
+      left:33%;
+  }
+
+  #page_accueil .reservation_express, #page_statique_1266 .reservation_express {
+      top: 250px;
+  }
+}
+
+/*TABLETTE*/
+@media only screen and (max-width: 989px) {
+  .fond_vehicules {
+      margin-left:1%;
+      margin-right: 1%;
+  }
+
+  .categories_defilant .owl-carousel .owl-item .photo {
+      margin-top: 4px;
+      height: 115px;
+  }
+
+  .num_tel {
+      left: 46%;
+      font-size: 1.8em;
+      background-size: 30%;
+  }
+
+  .heure {
+      display: none;
+  }
+
+  #page_accueil .reservation_express, #page_statique_1266 .reservation_express {
+      display: block;
+      margin-left: 20%;
+      width: 50%;
+      padding: 5%;
+  }
+
+  .mobile_menu .fa, .mobile_membre_encart {
+      color: #817cb4;
+  }
+
+  html > body #menu li, #menu li {
+      background-color: #817cb4;
+  }
+
+  #menu a {
+      color: #FFFFFF;
+  }
+
+  .actualites_liste .rendu h2 {
+      font-size: 2em;
+  }
+}
+
+/*PORTABLE*/
+@media only screen and (max-width: 683px) {
+  .header {
+      margin-top:71px;
+  }
+
+  /*.membre_encart{display:block;}*/
+  .decouvrir .sous_titre {
+      line-height: 125px;
+  }
+
+  .num_tel {
+      left: 0px;
+      font-size: 22px;
+      padding-left: 67px;
+  }
+
+  #page_accueil .reservation_express, #page_statique_1266 .reservation_express {
+      margin-left: 5%;
+      width: 80%;
+      top: 180px;
+  }
+
+  #page_accueil .reservation_express .suivant_etape, #page_statique_1266 .reservation_express .suivant_etape {
+      box-shadow: none;
+  }
+
+  .reassurance .item {
+      width: 96%;
+  }
+
+  .agences_liste .item {
+      clear: both;
+      width: 96%;
+  }
+
+  .reservation_express .liste_type,.reservation_express .calendar_aller,.reservation_express .calendar_retour {
+      clear: both;
+  }
+
+  #page_accueil .reservation_express, #page_statique_1266 .reservation_express {
+      position: static;
+      box-shadow: none;
+  }
+
+  .categories_defilant .prix_appel {
+      display: none;
+  }
+
+  .actualites_liste {
+      display: none;
+  }
+
+  .decouvrir .item .sous_titre {
+      line-height: 55px;
+  }
+
+  .menu_bas .menu_item {
+      display: block;
+      margin: 10px 0px;
+  }
+
+  footer {
+      padding-top: 0px;
+  }
+}
+
+
+

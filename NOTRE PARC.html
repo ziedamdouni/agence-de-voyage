@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>NOTRE PARC</title>
+  <meta name="description" lang="fr"
+    content="JAR Location est spécialisé dans la location de véhicule à Fort-de-France en Martinique . Nous louons des véhicules VL neufs et d'occasion. ">
+  <meta name="RATING" content="general">
+  <meta name="REVISIT-AFTER" content="15 days">
+  <meta name="ROBOTS" content="all">
+  <meta name="LANGUAGE" content="fr">
+  <meta name="DISTRIBUTION" content="Global">
+  <meta name="ABSTRACT" content="ff">
+  <meta name="Resource-type" content="document">
+  <script src="https://www.jlocation972.com/pulsit/lib/js/serveur_location2-min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://www.jlocation972.com/pulsit/lib/js/standard.js"></script>
+  <link rel="stylesheet" href="https://www.jlocation972.com/pulsit/lib/css/serveur_location2-min.css" type="text/css"
+    media="screen">
+  <link rel="stylesheet" href="https://www.jlocation972.com/include/styles_pages_dynamiques.css" type="text/css">
+  <link rel="stylesheet" href="https://www.jlocation972.com/pulsit/lib/css/font-awesome/v4.7/css/font-awesome.min.css"
+    type="text/css">
+  <link rel="stylesheet" href="https://www.jlocation972.com/images/default_20/default.css" type="text/css">
+  <link rel="stylesheet" href="https://www.jlocation972.com/images/jlocation972.com/default.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6Y9RVS26C1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-6Y9RVS26C1');
+  </script>
+  <style type="text/css">
+    .fancybox-margin {
+      margin-right: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header_in">
+      <div onclick="window.location = 'https://www.jlocation972.com/';" class="header" style="cursor:pointer;">
+        <div class="header_photo"></div>
+      </div><a href="TEL:0596701477" class="num_tel">05 96 70 14 77</a>
+      <div class="heure">
+        <div class="titre">En Martinique, il est</div>
+        <div id="timer_heure" class="timer_heure">0:33:41</div>
+        <script type="text/javascript">
+          function horloge() {
+            var heure = new Date().toLocaleString('fr-FR', {
+              timeZone: 'America/Martinique'
+            });
+            timer_heure.textContent = heure.substring(13, 21);
+          }
+          setInterval('horloge()', 1000);
+          horloge();
+        </script>
+      </div>
+      <div class="mobile_menu mobile_only"><i class="fa fa-3x fa-bars" aria-hidden="true"
+          onclick="if($('#menu').css('display')!='block')$('#menu').show();else $('#menu').hide();"></i></div>
+      <div class="menu_portail">
+        <div id="admin_menu">
+          <ul id="menu">
+            <li id="menu_portail_1266"><a href="Accueil.html">Accueil</a></li>
+            <li class="separateur"></li>
+            <li id="menu_portail_1263"><a href="Lieux De Livraison.html">Lieux de ivraison</a></li>
+            <li class="separateur"></li>
+            <li id="menu_portail_1261"><a href="NOTRE PARC.html">Notre parc</a></li>
+            <li class="separateur"></li>
+            <li id="menu_portail_1255"><a href="Contact.html">Contact</a></li>
+            <li class="separateur"></li>
+            <li id="menu_portail_1259"><a href="ESPACE CLIENT.html">Espace client</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mobile_only mobile_membre_encart"
+        onclick="window.location = 'https://www.jlocation972.com/espace_client.php';"></div>
+      <div class="membre_encart">
+        <div class="titre">Espace client</div>
+        <div class="encart_content">
+          <form method="post" action="https://www.jlocation972.com/espace_client.php">
+            <div class="lib">Votre mail :</div>
+            <input type="text" id="connexion_id_encart" name="connexion_id">
+            <div class="lib">Mot de passe :</div>
+            <input type="password" id="connexion_pass_encart" name="connexion_pass">
+            <div class="connexion_bouton"><input type="submit" value="Connexion"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="main_in contenu">
+      <div class="content_1300">
+        <div class="gauche">
+          <script type="text/javascript" src="https://www.jlocation972.com/modules/reservation.js"></script>
+          <div class="reservation reservation_express module">
+            <div id="reservation_form_express" class="reservation_form"
+              onclick="if(typeof(_gaq)!='undefined' &amp;&amp; typeof(ga_click_form)!='undefined' &amp;&amp; ga_click_form==0){_gaq.push(['_trackEvent','réservation formulaire', 'édition formulaire', 'categories_liste']);ga_click_form=1;}">
+              <form name="form_etape1" method="get" action="https://www.jlocation972.com/location-voiture-s1264.html">
+
+                <input type="hidden" name="etape" value="2">
+                <input type="hidden" name="la_version" value="express">
+                <div class="content_reservation  C_fond _container">
+                  <div class="presentation _titre">Location de voiture en Martinique</div>
+                  <div class="libelle libelle_aller _libelle">Agence aller :</div><select name="agence"
+                    class="select_agence agence_aller _valeur"
+                    onchange="$('input[name=vehicule]').val('');$('input[name=vehicule_etape2]').val('');if(this.value!='') load_form('','');">
+                    <option value="">Sélectionnez &gt;&gt;</option>
+                    <option value="865">Fort de france</option>
+                    <option value="866" selected="">Aéroport</option>
+                  </select>
+                  <div class="libelle _libelle" onclick="">Agence retour :</div><select name="agence_retour"
+                    class="select_agence agence_retour _valeur">
+                    <option value="">Sélectionnez &gt;&gt;</option>
+                    <option value="865">Fort de france</option>
+                    <option value="866" selected="">Aéroport</option>
+                  </select><input type="hidden" name="promotion" value="0" id="promotion"><input type="hidden"
+                    name="famille" value="106" id="famille">
+                  <div class="categorie categorie_2b _container">
+                    <div class="libelle _libelle">Choix du véhicule :</div>
+                    <div class="categorie_titre">Les véhicules</div>
+                    <div class="liste_type _items">
+                      <div class="item _item item_off item_on " id="item_106"
+                        onclick="$('#famille_radio_106').attr('checked', 'checked');$('input[name=famille_radio]').val(['106']);$('.item').removeClass('item_on');$('#item_106').addClass('item_on');$('#famille').val('106');$('#promotion').val('');$('#vehicule').val('');$('input[name=etape]').val('famille');"
+                        onmouseover="" onmouseout="if(!$('#item_106').hasClass('item_on'))$('#img_106').show();">
+                        <div id="item_nom_106" class="nom"><input type="radio" name="famille_radio"
+                            id="famille_radio_106" value="106" checked="checked">Tourisme </div>
+                      </div>
+                      <div class="item _item item_off" id="item_107"
+                        onclick="$('#famille_radio_107').attr('checked', 'checked');$('input[name=famille_radio]').val(['107']);$('.item').removeClass('item_on');$('#item_107').addClass('item_on');$('#famille').val('107');$('#promotion').val('');$('#vehicule').val('');$('input[name=etape]').val('famille');"
+                        onmouseover="" onmouseout="if(!$('#item_107').hasClass('item_on'))$('#img_107').show();">
+                        <div id="item_nom_107" class="nom"><input type="radio" name="famille_radio"
+                            id="famille_radio_107" value="107">Utilitaires </div>
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="calendar_contener _container">
+                    <div class="lib_date_aller _libelle">Départ le :</div>
+                    <div class="calendar_aller _valeur"><input id="date_depart" name="date_depart" value="04/05/2021"
+                        readonly="" onclick="$('#date_depart').datepicker('show');" class="hasDatepicker"><img
+                        class="ui-datepicker-trigger" src="https://www.rentit.fr/images/reservation/calendar.png"
+                        alt="Calendrier" title="Calendrier"></div><select name="heure_depart" id="heure_depart"
+                      class="heure_depart _valeur">
+                      <option value="08:00">08:00</option>
+                      <option value="08:30">08:30</option>
+                      <option value="09:00">09:00</option>
+                      <option value="09:30">09:30</option>
+                      <option value="10:00">10:00</option>
+                      <option value="10:30">10:30</option>
+                      <option value="11:00">11:00</option>
+                      <option value="11:30">11:30</option>
+                      <option value="12:00">12:00</option>
+                      <option value="12:30">12:30</option>
+                      <option value="13:00">13:00</option>
+                      <option value="13:30">13:30</option>
+                      <option value="14:00">14:00</option>
+                      <option value="14:30">14:30</option>
+                      <option value="15:00">15:00</option>
+                      <option value="15:30">15:30</option>
+                      <option value="16:00" selected="selected">16:00</option>
+                      <option value="16:30">16:30</option>
+                      <option value="17:00">17:00</option>
+                      <option value="17:30">17:30</option>
+                      <option value="18:00">18:00</option>
+                      <option value="18:30">18:30</option>
+                      <option value="19:00">19:00</option>
+                      <option value="19:30">19:30</option>
+                      <option value="20:00">20:00</option>
+                      <option value="20:30">20:30</option>
+                      <option value="21:00">21:00</option>
+                      <option value="21:30">21:30</option>
+                      <option value="22:00">22:00</option>
+                      <option value="22:30">22:30</option>
+                      <option value="23:00">23:00</option>
+                      <option value="23:30">23:30</option>
+                      <option value="23:50">23:50</option>
+                    </select>
+                    <div class="lib_date_retour _libelle">Retour le :</div>
+                    <div class="calendar_retour _valeur"><input id="date_retour" name="date_retour" value="04/05/2021"
+                        readonly="" onclick="$('#date_retour').datepicker('show');" class="hasDatepicker"><img
+                        class="ui-datepicker-trigger" src="https://www.rentit.fr/images/reservation/calendar.png"
+                        alt="Calendrier" title="Calendrier"></div><select name="heure_retour" id="heure_retour"
+                      class="heure_retour _valeur">
+                      <option value="08:00">08:00</option>
+                      <option value="08:30">08:30</option>
+                      <option value="09:00">09:00</option>
+                      <option value="09:30">09:30</option>
+                      <option value="10:00">10:00</option>
+                      <option value="10:30">10:30</option>
+                      <option value="11:00">11:00</option>
+                      <option value="11:30">11:30</option>
+                      <option value="12:00">12:00</option>
+                      <option value="12:30">12:30</option>
+                      <option value="13:00">13:00</option>
+                      <option value="13:30">13:30</option>
+                      <option value="14:00">14:00</option>
+                      <option value="14:30">14:30</option>
+                      <option value="15:00">15:00</option>
+                      <option value="15:30">15:30</option>
+                      <option value="16:00" selected="selected">16:00</option>
+                      <option value="16:30">16:30</option>
+                      <option value="17:00">17:00</option>
+                      <option value="17:30">17:30</option>
+                      <option value="18:00">18:00</option>
+                      <option value="18:30">18:30</option>
+                      <option value="19:00">19:00</option>
+                      <option value="19:30">19:30</option>
+                      <option value="20:00">20:00</option>
+                      <option value="20:30">20:30</option>
+                      <option value="21:00">21:00</option>
+                      <option value="21:30">21:30</option>
+                      <option value="22:00">22:00</option>
+                      <option value="22:30">22:30</option>
+                      <option value="23:00">23:00</option>
+                      <option value="23:30">23:30</option>
+                      <option value="23:50">23:50</option>
+                    </select>
+                  </div>
+                  <div class="km_estimes_encart _container">
+                    <div class="libelle _libelle">Kilomètres estimés :</div><input type="text" name="km_estimes"
+                      id="km_estimes" class="km_estimes _valeur" value="100"
+                      onkeypress="if(!is_int(event)){return false;}">
+                    <div class="km_estimes_lib_km _unite">km</div>
+                    <div class="libelle_long _texte">Estimez votre trajet à l'aide de <a
+                        href="http://maps.google.fr/maps?hl=fr&amp;tab=wl" target="_blank">google map</a> ou de <a
+                        href="http://www.mappy.fr" target="_blank">mappy</a></div>
+                  </div>
+                  <div class="suivant_etape _bouton"
+                    onclick="if(typeof(_gaq)!='undefined'){_gaq.push(['_trackEvent','réservation formulaire', 'valider', 'categories_liste']);}Verif();">
+                    Rechercher</div>
+                  <div class="clear"></div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+        <div class="centre">
+          <div class="articles_liste module c_1 ">
+            <div class="normal">
+              <div class="items">
+                <div class="item style0" id="article_1241">
+                  <h1>Toutes nos locations incluent le kilométrage illimité</h1>
+                  <div class="date valeur_br">16 decembre 2020</div>
+                  <div class="contenu_texte"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="categories_liste">
+            <div class="items">
+              <div class="famille">
+                <div class="titre_famille _titre">Tourisme</div>
+                <div class="item item_614">
+                  <div class="photo"><a
+                      href="https://www.jlocation972.com/location-voiture-eco-1-renault-twingo-ou-similaire-c614.html"><img
+                        src="https://www.jlocation972.com/documents/images/parc_categories/eco-1-renault-twingo-ou-similaire-72.png"
+                        alt="ECO 1 RENAULT TWINGO ou similaire" style="border-width:0px;" class=""></a></div><a
+                    href="https://www.jlocation972.com/location-voiture-eco-1-renault-twingo-ou-similaire-c614.html">
+                    <div class="titre _titre">ECO 1 RENAULT TWINGO ou similaire</div>
+                    <div class="nom_interne">Cat ECO1</div>
+                  </a>
+                  <div class="icones">
+                    <div class="ic_vehicule fa ic_auto"><span class="icones_lib">Type</span></div>
+                    <div class="ic_vehicule fa ic_clim_1"><span class="icones_lib">Climatisation</span></div>
+                    <div class="ic_vehicule fa ic_clim_boite_manuelle"><span class="icones_lib">Transmission</span>
+                    </div>
+                    <div class="ic_vehicule fa ic_portes_3"><span class="icones_lib">Portes</span></div>
+                    <div class="ic_vehicule fa ic_personnes_4"><span class="icones_lib">Places</span></div>
+                    <div class="ic_vehicule fa ic_essence"><span class="icones_lib">Motorisation</span></div>
+                    <div class="ic_vehicule fa ic_age_21"><span class="icones_lib">Age mini.</span></div>
+                    <div class="ic_vehicule fa ic_permis_3"><span class="icones_lib">Année permis</span></div>
+                    <div class="ic_vehicule fa ic_bagage_1"><span class="icones_lib">Bagages</span></div>
+                  </div><a
+                    href="https://www.jlocation972.com/location-voiture-eco-1-renault-twingo-ou-similaire-c614.html">
+                    <div class="plus_infos _bouton">Plus d'infos</div>
+                  </a><a
+                    href="https://www.jlocation972.com/location-voiture-eco-1-renault-twingo-ou-similaire-c614.html">
+                    <div class="libelle_action">Je souhaite réserver la catégorie ECO 1 RENAULT TWINGO ou similaire
+                    </div>
+                  </a>
+                  <div class="prix_appel">
+                    <div class="tarif_ttc _libelle">A partir de 22 € / j</div>
+                    <div class="details">Pour un forfait 7 jours 0 km</div>
+                  </div>
+                </div>
+                <div class="item item_616">
+                  <div class="photo"><a
+                      href="https://www.jlocation972.com/location-voiture-eco-2-nissan-micra-ou-similaire-c616.html"><img
+                        src="https://www.jlocation972.com/documents/images/parc_categories/nissan-micra-ou-similaire-72.png"
+                        alt="ECO 2 NISSAN MICRA ou similaire" style="border-width:0px;" class=""></a></div><a
+                    href="https://www.jlocation972.com/location-voiture-eco-2-nissan-micra-ou-similaire-c616.html">
+                    <div class="titre _titre">ECO 2 NISSAN MICRA ou similaire</div>
+                    <div class="nom_interne">Cat ECO2</div>
+                  </a>
+                  <div class="icones">
+                    <div class="ic_vehicule fa ic_auto"><span class="icones_lib">Type</span></div>
+                    <div class="ic_vehicule fa ic_clim_1"><span class="icones_lib">Climatisation</span></div>
+                    <div class="ic_vehicule fa ic_clim_boite_manuelle"><span class="icones_lib">Transmission</span>
+                    </div>
+                    <div class="ic_vehicule fa ic_portes_5"><span class="icones_lib">Portes</span></div>
+                    <div class="ic_vehicule fa ic_personnes_5"><span class="icones_lib">Places</span></div>
+                    <div class="ic_vehicule fa ic_essence"><span class="icones_lib">Motorisation</span></div>
+                    <div class="ic_vehicule fa ic_age_21"><span class="icones_lib">Age mini.</span></div>
+                    <div class="ic_vehicule fa ic_permis_3"><span class="icones_lib">Année permis</span></div>
+                    <div class="ic_vehicule fa ic_bagage_2"><span class="icones_lib">Bagages</span></div>
+                  </div><a
+                    href="https://www.jlocation972.com/location-voiture-eco-2-nissan-micra-ou-similaire-c616.html">
+                    <div class="plus_infos _bouton">Plus d'infos</div>
+                  </a><a href="https://www.jlocation972.com/location-voiture-eco-2-nissan-micra-ou-similaire-c616.html">
+                    <div class="libelle_action">Je souhaite réserver la catégorie ECO 2 NISSAN MICRA ou similaire</div>
+                  </a>
+                  <div class="prix_appel">
+                    <div class="tarif_ttc _libelle">A partir de 24 € / j</div>
+                    <div class="details">Pour un forfait 7 jours 0 km</div>
+                  </div>
+                </div>
+                <div class="item item_596">
+                  <div class="photo"><a
+                      href="https://www.jlocation972.com/location-voiture-kia-picanto-ou-similaire-c596.html"><img
+                        src="https://www.jlocation972.com/documents/images/parc_categories/kia-picanto-ou-similaire-72.png"
+                        alt="KIA PICANTO ou similaire" style="border-width:0px;" class=""></a></div><a
+                    href="https://www.jlocation972.com/location-voiture-kia-picanto-ou-similaire-c596.html">
+                    <div class="titre _titre">KIA PICANTO ou similaire</div>
+                    <div class="nom_interne">CAT A</div>
+                  </a>
+                  <div class="icones">
+                    <div class="ic_vehicule fa ic_auto"><span class="icones_lib">Type</span></div>
+                    <div class="ic_vehicule fa ic_clim_1"><span class="icones_lib">Climatisation</span></div>
+                    <div class="ic_vehicule fa ic_clim_boite_manuelle"><span class="icones_lib">Transmission</span>
+                    </div>
+                    <div class="ic_vehicule fa ic_portes_5"><span class="icones_lib">Portes</span></div>
+                    <div class="ic_vehicule fa ic_personnes_4"><span class="icones_lib">Places</span></div>
+                    <div class="ic_vehicule fa ic_essence"><span class="icones_lib">Motorisation</span></div>
+                    <div class="ic_vehicule fa ic_age_21"><span class="icones_lib">Age mini.</span></div>
+                    <div class="ic_vehicule fa ic_permis_3"><span class="icones_lib">Année permis</span></div>
+                    <div class="ic_vehicule fa ic_bagage_1"><span class="icones_lib">Bagages</span></div>
+                  </div><a href="https://www.jlocation972.com/location-voiture-kia-picanto-ou-similaire-c596.html">
+                    <div class="plus_infos _bouton">Plus d'infos</div>
+                  </a><a href="https://www.jlocation972.com/location-voiture-kia-picanto-ou-similaire-c596.html">
+                    <div class="libelle_action">Je souhaite réserver la catégorie KIA PICANTO ou similaire</div>
+                  </a>
+                  <div class="prix_appel">
+                    <div class="tarif_ttc _libelle">A partir de 27 € / j</div>
+                    <div class="details">Pour un forfait 7 jours 0 km</div>
+                  </div>
+                </div>
+                <div class="item item_597">
+                  <div class="photo"><a
+                      href="https://www.jlocation972.com/location-voiture-dacia-sandero-ou-similaire-c597.html"><img
+                        src="https://www.jlocation972.com/documents/images/parc_categories/dacia-sandero-ou-similaire-2-72.png"
+                        alt="DACIA SANDERO ou similaire" style="border-width:0px;" class=""></a></div><a
+                    href="https://www.jlocation972.com/location-voiture-dacia-sandero-ou-similaire-c597.html">
+                    <div class="titre _titre">DACIA SANDERO ou similaire</div>
+                    <div class="nom_interne">CAT B</div>
+                  </a>
+                  <div class="icones">
+                    <div class="ic_vehicule fa ic_auto"><span class="icones_lib">Type</span></div>
+                    <div class="ic_vehicule fa ic_clim_1"><span class="icones_lib">Climatisation</span></div>
+                    <div class="ic_vehicule fa ic_clim_boite_manuelle"><span class="icones_lib">Transmission</span>
+                    </div>
+                    <div class="ic_vehicule fa ic_portes_5"><span class="icones_lib">Portes</span></div>
+                    <div class="ic_vehicule fa ic_personnes_5"><span class="icones_lib">Places</span></div>
+                    <div class="ic_vehicule fa ic_essence"><span class="icones_lib">Motorisation</span></div>
+                    <div class="ic_vehicule fa ic_age_21"><span class="icones_lib">Age mini.</span></div>
+                    <div class="ic_vehicule fa ic_permis_3"><span class="icones_lib">Année permis</span></div>
+                    <div class="ic_vehicule fa ic_bagage_2"><span class="icones_lib">Bagages</span></div>
+                  </div><a href="https://www.jlocation972.com/location-voiture-dacia-sandero-ou-similaire-c597.html">
+                    <div class="plus_infos _bouton">Plus d'infos</div>
+                  </a><a href="https://www.jlocation972.com/location-voiture-dacia-sandero-ou-similaire-c597.html">
+                    <div class="libelle_action">Je souhaite réserver la catégorie DACIA SANDERO ou similaire</div>
+                  </a>
+                  <div class="prix_appel">
+                    <div class="tarif_ttc _libelle">A partir de 28 € / j</div>
+                    <div class="details">Pour un forfait 7 jours 0 km</div>
+                  </div>
+                </div>
+                <div class="item item_617">
+                  <div class="photo"><a
+                      href="https://www.jlocation972.com/location-voiture-citroen-c3-ou-similaire-c617.html"><img
+                        src="https://www.jlocation972.com/documents/images/parc_categories/citroen-c3-ou-similaire-1-72.png"
+                        alt="CITROEN C3 ou similaire" style="border-width:0px;" class=""></a></div><a
+                    href="https://www.jlocation972.com/location-voiture-citroen-c3-ou-similaire-c617.html">
+                    <div class="titre _titre">CITROEN C3 ou similaire</div>
+                    <div class="nom_interne">Cat B+</div>
+                  </a>
+                  <div class="icones">
+                    <div class="ic_vehicule fa ic_auto"><span class="icones_lib">Type</span></div>
+                    <div class="ic_vehicule fa ic_clim_1"><span class="icones_lib">Climatisation</span></div>
+                    <div class="ic_vehicule fa ic_clim_boite_manuelle"><span class="icones_lib">Transmission</span>
+                    </div>
+                    <div class="ic_vehicule fa ic_portes_5"><span class="icones_lib">Portes</span></div>
+                    <div class="ic_vehicule fa ic_personnes_5"><span class="icones_lib">Places</span></div>
+                    <div class="ic_vehicule fa ic_essence"><span class="icones_lib">Motorisation</span></div>
+                    <div class="ic_vehicule fa ic_age_21"><span class="icones_lib">Age mini.</span></div>
+                    <div class="ic_vehicule fa ic_permis_3"><span class="icones_lib">Année permis</span></div>
+                    <div class="ic_vehicule fa ic_bagage_2"><span class="icones_lib">Bagages</span></div>
+                  </div><a href="https://www.jlocation972.com/location-voiture-citroen-c3-ou-similaire-c617.html">
+                    <div class="plus_infos _bouton">Plus d'infos</div>
+                  </a><a href="https://www.jlocation972.com/location-voiture-citroen-c3-ou-similaire-c617.html">
+                    <div class="libelle_action">Je souhaite réserver la catégorie CITROEN C3 ou similaire</div>
+                  </a>
+                  <div class="prix_appel">
+                    <div class="tarif_ttc _libelle">A partir de 28.21 € / j</div>
+                    <div class="details">Pour un forfait 7 jours 0 km</div>
+                  </div>
+                </div>
+                <div class="item item_619">
+                  <div class="photo"><a
+                      href="https://www.jlocation972.com/location-voiture-peugeot-208-diesel-ou-similaire-c619.html"><img
+                        src="https://www.jlocation972.com/documents/images/parc_categories/peugeot-208-diesel-ou-similaire-72.png"
+                        alt="PEUGEOT 208 DIESEL ou similaire" style="border-width:0px;" class=""></a></div><a
+                    href="https://www.jlocation972.com/location-voiture-peugeot-208-diesel-ou-similaire-c619.html">
+                    <div class="titre _titre">PEUGEOT 208 DIESEL ou similaire</div>
+                    <div class="nom_interne">Cat C</div>
+                  </a>
+                  <div class="icones">
+                    <div class="ic_vehicule fa ic_auto"><span class="icones_lib">Type</span></div>
+                    <div class="ic_vehicule fa ic_clim_1"><span class="icones_lib">Climatisation</span></div>
+                    <div class="ic_vehicule fa ic_clim_boite_manuelle"><span class="icones_lib">Transmission</span>
+                    </div>
+                    <div class="ic_vehicule fa ic_portes_5"><span class="icones_lib">Portes</span></div>
+                    <div class="ic_vehicule fa ic_personnes_5"><span class="icones_lib">Places</span></div>
+                    <div class="ic_vehicule fa ic_diesel"><span class="icones_lib">Motorisation</span></div>
+                    <div class="ic_vehicule fa ic_age_21"><span class="icones_lib">Age mini.</span></div>
+                    <div class="ic_vehicule fa ic_permis_3"><span class="icones_lib">Année permis</span></div>
+                    <div class="ic_vehicule fa ic_bagage_2"><span class="icones_lib">Bagages</span></div>
+                  </div><a
+                    href="https://www.jlocation972.com/location-voiture-peugeot-208-diesel-ou-similaire-c619.html">
+                    <div class="plus_infos _bouton">Plus d'infos</div>
+                  </a><a href="https://www.jlocation972.com/location-voiture-peugeot-208-diesel-ou-similaire-c619.html">
+                    <div class="libelle_action">Je souhaite réserver la catégorie PEUGEOT 208 DIESEL ou similaire</div>
+                  </a>
+                  <div class="prix_appel">
+                    <div class="tarif_ttc _libelle">A partir de 31 € / j</div>
+                    <div class="details">Pour un forfait 7 jours 0 km</div>
+                  </div>
+                </div>
+                <div class="item item_611">
+                  <div class="photo"><a
+                      href="https://www.jlocation972.com/location-voiture-citroen-c1-automatique-ou-similaire-c611.html"><img
+                        src="https://www.jlocation972.com/documents/images/parc_categories/citroen-c1-automatique-ou-similaire-72.png"
+                        alt="CITROEN C1 AUTOMATIQUE ou similaire" style="border-width:0px;" class=""></a></div><a
+                    href="https://www.jlocation972.com/location-voiture-citroen-c1-automatique-ou-similaire-c611.html">
+                    <div class="titre _titre">CITROEN C1 AUTOMATIQUE ou similaire</div>
+                    <div class="nom_interne">Cat A+</div>
+                  </a>
+                  <div class="icones">
+                    <div class="ic_vehicule fa ic_auto"><span class="icones_lib">Type</span></div>
+                    <div class="ic_vehicule fa ic_clim_1"><span class="icones_lib">Climatisation</span></div>
+                    <div class="ic_vehicule fa ic_clim_boite_auto"><span class="icones_lib">Transmission</span></div>
+                    <div class="ic_vehicule fa ic_portes_5"><span class="icones_lib">Portes</span></div>
+                    <div class="ic_vehicule fa ic_personnes_4"><span class="icones_lib">Places</span></div>
+                    <div class="ic_vehicule fa ic_essence"><span class="icones_lib">Motorisation</span></div>
+                    <div class="ic_vehicule fa ic_age_21"><span class="icones_lib">Age mini.</span></div>
+                    <div class="ic_vehicule fa ic_permis_3"><span class="icones_lib">Année permis</span></div>
+                    <div class="ic_vehicule fa ic_bagage_1"><span class="icones_lib">Bagages</span></div>
+                  </div><a
+                    href="https://www.jlocation972.com/location-voiture-citroen-c1-automatique-ou-similaire-c611.html">
+                    <div class="plus_infos _bouton">Plus d'infos</div>
+                  </a><a
+                    href="https://www.jlocation972.com/location-voiture-citroen-c1-automatique-ou-similaire-c611.html">
+                    <div class="libelle_action">Je souhaite réserver la catégorie CITROEN C1 AUTOMATIQUE ou similaire
+                    </div>
+                  </a>
+                  <div class="prix_appel">
+                    <div class="tarif_ttc _libelle">A partir de 40 € / j</div>
+                    <div class="details">Pour un forfait 7 jours 0 km</div>
+                  </div>
+                </div>
+                <div class="item item_618">
+                  <div class="photo"><a
+                      href="https://www.jlocation972.com/location-voiture-dacia-sandero-automatique-c618.html"><img
+                        src="https://www.jlocation972.com/documents/images/parc_categories/dacia-sandero-automatique-2-72.png"
+                        alt="DACIA SANDERO AUTOMATIQUE" style="border-width:0px;" class=""></a></div><a
+                    href="https://www.jlocation972.com/location-voiture-dacia-sandero-automatique-c618.html">
+                    <div class="titre _titre">DACIA SANDERO AUTOMATIQUE</div>
+                    <div class="nom_interne">Cat B1+</div>
+                  </a>
+                  <div class="icones">
+                    <div class="ic_vehicule fa ic_auto"><span class="icones_lib">Type</span></div>
+                    <div class="ic_vehicule fa ic_clim_1"><span class="icones_lib">Climatisation</span></div>
+                    <div class="ic_vehicule fa ic_clim_boite_auto"><span class="icones_lib">Transmission</span></div>
+                    <div class="ic_vehicule fa ic_portes_5"><span class="icones_lib">Portes</span></div>
+                    <div class="ic_vehicule fa ic_personnes_5"><span class="icones_lib">Places</span></div>
+                    <div class="ic_vehicule fa ic_diesel"><span class="icones_lib">Motorisation</span></div>
+                    <div class="ic_vehicule fa ic_age_21"><span class="icones_lib">Age mini.</span></div>
+                    <div class="ic_vehicule fa ic_permis_3"><span class="icones_lib">Année permis</span></div>
+                    <div class="ic_vehicule fa ic_bagage_2"><span class="icones_lib">Bagages</span></div>
+                  </div><a href="https://www.jlocation972.com/location-voiture-dacia-sandero-automatique-c618.html">
+                    <div class="plus_infos _bouton">Plus d'infos</div>
+                  </a><a href="https://www.jlocation972.com/location-voiture-dacia-sandero-automatique-c618.html">
+                    <div class="libelle_action">Je souhaite réserver la catégorie DACIA SANDERO AUTOMATIQUE</div>
+                  </a>
+                  <div class="prix_appel">
+                    <div class="tarif_ttc _libelle">A partir de 36 € / j</div>
+                    <div class="details">Pour un forfait 7 jours 0 km</div>
+                  </div>
+                </div>
+                <div class="item item_620">
+                  <div class="photo"><a
+                      href="https://www.jlocation972.com/location-voiture-dacia-logan-break-7-places-c620.html"><img
+                        src="https://www.jlocation972.com/documents/images/parc_categories/dacia-logan-break-7-places-1-72.png"
+                        alt="DACIA LOGAN BREAK 7 PLACES" style="border-width:0px;" class=""></a></div><a
+                    href="https://www.jlocation972.com/location-voiture-dacia-logan-break-7-places-c620.html">
+                    <div class="titre _titre">DACIA LOGAN BREAK 7 PLACES</div>
+                    <div class="nom_interne">Cat D</div>
+                  </a>
+                  <div class="icones">
+                    <div class="ic_vehicule fa ic_clim_1"><span class="icones_lib">Climatisation</span></div>
+                    <div class="ic_vehicule fa ic_clim_boite_manuelle"><span class="icones_lib">Transmission</span>
+                    </div>
+                    <div class="ic_vehicule fa ic_portes_5"><span class="icones_lib">Portes</span></div>
+                    <div class="ic_vehicule fa ic_personnes_7"><span class="icones_lib">Places</span></div>
+                    <div class="ic_vehicule fa ic_diesel"><span class="icones_lib">Motorisation</span></div>
+                    <div class="ic_vehicule fa ic_age_21"><span class="icones_lib">Age mini.</span></div>
+                    <div class="ic_vehicule fa ic_permis_3"><span class="icones_lib">Année permis</span></div>
+                    <div class="ic_vehicule fa ic_break"><span class="icones_lib"></span></div>
+                    <div class="ic_vehicule fa ic_bagage_1"><span class="icones_lib">Bagages</span></div>
+                  </div><a href="https://www.jlocation972.com/location-voiture-dacia-logan-break-7-places-c620.html">
+                    <div class="plus_infos _bouton">Plus d'infos</div>
+                  </a><a href="https://www.jlocation972.com/location-voiture-dacia-logan-break-7-places-c620.html">
+                    <div class="libelle_action">Je souhaite réserver la catégorie DACIA LOGAN BREAK 7 PLACES</div>
+                  </a>
+                  <div class="prix_appel">
+                    <div class="tarif_ttc _libelle">A partir de 40 € / j</div>
+                    <div class="details">Pour un forfait 7 jours 0 km</div>
+                  </div>
+                </div>
+                <div class="item item_621">
+                  <div class="photo"><a
+                      href="https://www.jlocation972.com/location-voiture-dacia-lodgy-7-places-c621.html"><img
+                        src="https://www.jlocation972.com/documents/images/parc_categories/dacia-lodgy-7-places-72.png"
+                        alt="DACIA LODGY 7 PLACES" style="border-width:0px;" class=""></a></div><a
+                    href="https://www.jlocation972.com/location-voiture-dacia-lodgy-7-places-c621.html">
+                    <div class="titre _titre">DACIA LODGY 7 PLACES</div>
+                    <div class="nom_interne">Cat D+</div>
+                  </a>
+                  <div class="icones">
+                    <div class="ic_vehicule fa ic_clim_1"><span class="icones_lib">Climatisation</span></div>
+                    <div class="ic_vehicule fa ic_clim_boite_manuelle"><span class="icones_lib">Transmission</span>
+                    </div>
+                    <div class="ic_vehicule fa ic_portes_5"><span class="icones_lib">Portes</span></div>
+                    <div class="ic_vehicule fa ic_personnes_7"><span class="icones_lib">Places</span></div>
+                    <div class="ic_vehicule fa ic_diesel"><span class="icones_lib">Motorisation</span></div>
+                    <div class="ic_vehicule fa ic_age_21"><span class="icones_lib">Age mini.</span></div>
+                    <div class="ic_vehicule fa ic_permis_3"><span class="icones_lib">Année permis</span></div>
+                    <div class="ic_vehicule fa ic_break"><span class="icones_lib"></span></div>
+                    <div class="ic_vehicule fa ic_bagage_1"><span class="icones_lib">Bagages</span></div>
+                  </div><a href="https://www.jlocation972.com/location-voiture-dacia-lodgy-7-places-c621.html">
+                    <div class="plus_infos _bouton">Plus d'infos</div>
+                  </a><a href="https://www.jlocation972.com/location-voiture-dacia-lodgy-7-places-c621.html">
+                    <div class="libelle_action">Je souhaite réserver la catégorie DACIA LODGY 7 PLACES</div>
+                  </a>
+                  <div class="prix_appel">
+                    <div class="tarif_ttc _libelle">A partir de 45 € / j</div>
+                    <div class="details">Pour un forfait 7 jours 0 km</div>
+                  </div>
+                </div>
+                <div class="item item_609">
+                  <div class="photo"><a href="https://www.jlocation972.com/location-voiture-dacia-duster-c609.html"><img
+                        src="https://www.jlocation972.com/documents/images/parc_categories/dacia-duster-72.png"
+                        alt="DACIA DUSTER" style="border-width:0px;" class=""></a></div><a
+                    href="https://www.jlocation972.com/location-voiture-dacia-duster-c609.html">
+                    <div class="titre _titre">DACIA DUSTER</div>
+                    <div class="nom_interne">CAT SUV</div>
+                  </a>
+                  <div class="icones">
+                    <div class="ic_vehicule fa ic_auto"><span class="icones_lib">Type</span></div>
+                    <div class="ic_vehicule fa ic_clim_1"><span class="icones_lib">Climatisation</span></div>
+                    <div class="ic_vehicule fa ic_clim_boite_manuelle"><span class="icones_lib">Transmission</span>
+                    </div>
+                    <div class="ic_vehicule fa ic_portes_5"><span class="icones_lib">Portes</span></div>
+                    <div class="ic_vehicule fa ic_personnes_5"><span class="icones_lib">Places</span></div>
+                    <div class="ic_vehicule fa ic_diesel"><span class="icones_lib">Motorisation</span></div>
+                    <div class="ic_vehicule fa ic_age_21"><span class="icones_lib">Age mini.</span></div>
+                    <div class="ic_vehicule fa ic_permis_3"><span class="icones_lib">Année permis</span></div>
+                    <div class="ic_vehicule fa ic_bagage_2"><span class="icones_lib">Bagages</span></div>
+                  </div><a href="https://www.jlocation972.com/location-voiture-dacia-duster-c609.html">
+                    <div class="plus_infos _bouton">Plus d'infos</div>
+                  </a><a href="https://www.jlocation972.com/location-voiture-dacia-duster-c609.html">
+                    <div class="libelle_action">Je souhaite réserver la catégorie DACIA DUSTER </div>
+                  </a>
+                  <div class="prix_appel">
+                    <div class="tarif_ttc _libelle">A partir de 43 € / j</div>
+                    <div class="details">Pour un forfait 7 jours 0 km</div>
+                  </div>
+                </div>
+                <div class="item item_622">
+                  <div class="photo"><a
+                      href="https://www.jlocation972.com/location-voiture-renault-twingo-commerciale-c622.html"><img
+                        src="https://www.jlocation972.com/documents/images/parc_categories/renault-twingo-commerciale-72.png"
+                        alt="RENAULT TWINGO COMMERCIALE" style="border-width:0px;" class=""></a></div><a
+                    href="https://www.jlocation972.com/location-voiture-renault-twingo-commerciale-c622.html">
+                    <div class="titre _titre">RENAULT TWINGO COMMERCIALE</div>
+                    <div class="nom_interne">Cat F</div>
+                  </a>
+                  <div class="icones">
+                    <div class="ic_vehicule fa ic_auto"><span class="icones_lib">Type</span></div>
+                    <div class="ic_vehicule fa ic_clim_1"><span class="icones_lib">Climatisation</span></div>
+                    <div class="ic_vehicule fa ic_clim_boite_manuelle"><span class="icones_lib">Transmission</span>
+                    </div>
+                    <div class="ic_vehicule fa ic_portes_3"><span class="icones_lib">Portes</span></div>
+                    <div class="ic_vehicule fa ic_personnes_2"><span class="icones_lib">Places</span></div>
+                    <div class="ic_vehicule fa ic_diesel"><span class="icones_lib">Motorisation</span></div>
+                    <div class="ic_vehicule fa ic_age_21"><span class="icones_lib">Age mini.</span></div>
+                    <div class="ic_vehicule fa ic_permis_3"><span class="icones_lib">Année permis</span></div>
+                    <div class="ic_vehicule fa ic_bagage_3"><span class="icones_lib">Bagages</span></div>
+                  </div><a href="https://www.jlocation972.com/location-voiture-renault-twingo-commerciale-c622.html">
+                    <div class="plus_infos _bouton">Plus d'infos</div>
+                  </a><a href="https://www.jlocation972.com/location-voiture-renault-twingo-commerciale-c622.html">
+                    <div class="libelle_action">Je souhaite réserver la catégorie RENAULT TWINGO COMMERCIALE</div>
+                  </a>
+                  <div class="prix_appel">
+                    <div class="tarif_ttc _libelle">A partir de 28 € / j</div>
+                    <div class="details">Pour un forfait 7 jours 0 km</div>
+                  </div>
+                </div>
+                <div class="item item_623">
+                  <div class="photo"><a
+                      href="https://www.jlocation972.com/location-voiture-nissan-nv200-fourgonnette-c623.html"><img
+                        src="https://www.jlocation972.com/documents/images/parc_categories/nissan-nv200-fourgonnette-72.png"
+                        alt="NISSAN NV200 FOURGONNETTE" style="border-width:0px;" class=""></a></div><a
+                    href="https://www.jlocation972.com/location-voiture-nissan-nv200-fourgonnette-c623.html">
+                    <div class="titre _titre">NISSAN NV200 FOURGONNETTE</div>
+                    <div class="nom_interne">Cat F+</div>
+                  </a>
+                  <div class="icones">
+                    <div class="ic_vehicule fa ic_camion"><span class="icones_lib">Type</span></div>
+                    <div class="ic_vehicule fa ic_clim_1"><span class="icones_lib">Climatisation</span></div>
+                    <div class="ic_vehicule fa ic_clim_boite_manuelle"><span class="icones_lib">Transmission</span>
+                    </div>
+                    <div class="ic_vehicule fa ic_portes_4"><span class="icones_lib">Portes</span></div>
+                    <div class="ic_vehicule fa ic_personnes_2"><span class="icones_lib">Places</span></div>
+                    <div class="ic_vehicule fa ic_diesel"><span class="icones_lib">Motorisation</span></div>
+                    <div class="ic_vehicule fa ic_age_21"><span class="icones_lib">Age mini.</span></div>
+                    <div class="ic_vehicule fa ic_permis_3"><span class="icones_lib">Année permis</span></div>
+                    <div class="ic_vehicule fa ic_bagage_10"><span class="icones_lib">Bagages</span></div>
+                  </div><a href="https://www.jlocation972.com/location-voiture-nissan-nv200-fourgonnette-c623.html">
+                    <div class="plus_infos _bouton">Plus d'infos</div>
+                  </a><a href="https://www.jlocation972.com/location-voiture-nissan-nv200-fourgonnette-c623.html">
+                    <div class="libelle_action">Je souhaite réserver la catégorie NISSAN NV200 FOURGONNETTE</div>
+                  </a>
+                  <div class="prix_appel">
+                    <div class="tarif_ttc _libelle">A partir de 40.15 € / j</div>
+                    <div class="details">Pour un forfait 7 jours 0 km</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

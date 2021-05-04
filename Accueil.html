@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Stylla.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="js/bootstrap.min.js">  
+  <title>Accueil</title>
+</head>
+<script>
+  function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('c5').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 1000);
+  }
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
+  </script>
+  
+  </head>
+ <body onload="startTime()">
+  <div class="grid-container">
+    <div class="grid-item1">
+      <div class="nested"><img class="img" src="img/images.jpeg" alt="Forest" width="300" height="100">
+      </div>
+      <div class="nested"><img src="img/tel.jpeg" alt="Northern Lights" width="50" height="30">
+        <label for="" style="color: brown;">+21690392095</label>
+      </div>
+      <div class="nested"><img class="hover" src="img/time.png "alt="Mountains" width="50" height="30"> 
+        <label class="hover" for="hover" style="color: brown;">En Martinique, il est</label>
+        <label class="hover" for="" id="c5" style="color: brown;"></label>
+      </div>
+      
+      
+    </div>
+    <div class="grid-item2">
+      <nav>
+       <ul>
+         <li><a class="active" href="#home">Home</a></li>
+         <li><a href="Accueil.html">Accueil</a></li>
+         <li><a href="Contact.html">Contact</a></li>
+         <li><a href="ESPACE CLIENT.html">ESPACE Clients</a></li>
+         <li><a href="Lieux De Livraison.html">Lieux De Livraison</a></li>
+         <li><a href="NOTRE PARC.html">Notre Parc</a></li>
+       </ul>
+     </nav>
+    </div>
+    <div class="grid-item3"><div class="bg-img">
+      <form action="/action_page.php" class="container">
+          <p><h2 >Location de voiture en Martinique</h2>
+        
+          <label for="Agence aller"><b>Agence aller :</b></label>
+          <select name="agence" class="select_agence agence_aller _valeur" >
+            <option value="">Sélectionnez &gt;&gt;</option>
+            <option value="865">Fort de france</option>
+            <option value="866" selected="">Aéroport</option>
+          </select><br>
+          <label for="Agence retour "><b>Agence retour  :</b></label>
+          <select name="agence_retour" class="select_agence agence_retour _valeur">
+            <option value="">Sélectionnez &gt;&gt;</option>
+            <option value="865">Fort de france</option>
+            <option value="866" selected="">Aéroport</option>
+          </select><br>
+          <label for="choix-véhicule"><b>Choix du véhicule :</b></label>
+          <input type="radio" name="famille_radio" id="famille_radio_106" value="106" checked="checked">Tourisme
+          <input type="radio" name="famille_radio" id="famille_radio_107" value="107" checked="checked">Utilitaires	<br>
+          <label for="Départ">Départ le :</label>
+          <input id="date_depart" name="date_depart" value="29/04/2021" readonly="" onclick="$('#date_depart').datepicker('show');" class="hasDatepicker">
+          <img class="ui-datepicker-trigger" src="https://www.rentit.fr/images/reservation/calendar.png" alt="Calendrier" title="Calendrier">
+          <select name="heure_depart" id="heure_depart" class="heure_depart _valeur">
+            <option value="08:00">08:00</option><option value="08:30">08:30</option>
+            <option value="09:00">09:00</option><option value="09:30">09:30</option>
+            <option value="10:00">10:00</option><option value="10:30">10:30</option>
+            <option value="11:00">11:00</option><option value="11:30">11:30</option>
+            <option value="12:00">12:00</option><option value="12:30">12:30</option>
+            <option value="13:00">13:00</option><option value="13:30">13:30</option>
+            <option value="14:00">14:00</option><option value="14:30">14:30</option>
+            <option value="15:00">15:00</option><option value="15:30">15:30</option>
+            <option value="16:00" selected="selected">16:00</option>
+            <option value="16:30">16:30</option>
+            <option value="17:00">17:00</option>
+            <option value="17:30">17:30</option>
+            <option value="18:00">18:00</option>
+            <option value="18:30">18:30</option>
+            <option value="19:00">19:00</option>
+            <option value="19:30">19:30</option>
+            <option value="20:00">20:00</option>
+            <option value="20:30">20:30</option>
+            <option value="21:00">21:00</option>
+            <option value="21:30">21:30</option>
+            <option value="22:00">22:00</option>
+            <option value="22:30">22:30</option>
+            <option value="23:00">23:00</option>
+            <option value="23:30">23:30</option>
+            <option value="23:50">23:50</option>
+          </select><br>
+          <label for="Départ">Retour le :</label>
+          <input id="date_depart" name="date_depart" value="07/05/2021" readonly="" onclick="$('#date_depart').datepicker('show');" class="hasDatepicker">
+          <img class="ui-datepicker-trigger" src="https://www.rentit.fr/images/reservation/calendar.png" alt="Calendrier" title="Calendrier">
+          <select name="heure_depart" id="heure_depart" class="heure_depart _valeur">
+            <option value="08:00">08:00</option><option value="08:30">08:30</option>
+            <option value="09:00">09:00</option><option value="09:30">09:30</option>
+            <option value="10:00">10:00</option><option value="10:30">10:30</option>
+            <option value="11:00">11:00</option><option value="11:30">11:30</option>
+            <option value="12:00">12:00</option><option value="12:30">12:30</option>
+            <option value="13:00">13:00</option><option value="13:30">13:30</option>
+            <option value="14:00">14:00</option><option value="14:30">14:30</option>
+            <option value="15:00">15:00</option><option value="15:30">15:30</option>
+            <option value="16:00" selected="selected">16:00</option>
+            <option value="16:30">16:30</option>
+            <option value="17:00">17:00</option>
+            <option value="17:30">17:30</option>
+            <option value="18:00">18:00</option>
+            <option value="18:30">18:30</option>
+            <option value="19:00">19:00</option>
+            <option value="19:30">19:30</option>
+            <option value="20:00">20:00</option>
+            <option value="20:30">20:30</option>
+            <option value="21:00">21:00</option>
+            <option value="21:30">21:30</option>
+            <option value="22:00">22:00</option>
+            <option value="22:30">22:30</option>
+            <option value="23:00">23:00</option>
+            <option value="23:30">23:30</option>
+            <option value="23:50">23:50</option>
+          </select>
+        <button type="submit" class="btn">Login</button>
+      </form>
+    </div></div>
+    <div class="grid-item4"><img src="img/download.png" alt="">
+    </div>
+    <div class="grid-item5">
+      <div class="nested">
+       <img class="hover" src="img/citroen-c1-automatique-ou-similaire-72.png" alt="Forest" width="400" height="100">
+      </div>
+      <div class="nested">
+       <img  class="hover"src="img/nissan-micra-ou-similaire-72 (1).png" alt="Northern Lights" width="400" height="100"> 
+      </div>
+      <div class="nested">
+        <img class="hover" src="img/eco-1-renault-twingo-ou-similaire-72.png "alt="Mountains" width="400" height="100"> 
+      </div>
+    </div>
+    <div class="grid-item6">
+       <div><h2 class="titre_rouge vehicules" >NOS OFFRES DE VEHICULES</h2>
+      </div>
+          <div></div>
+         <div><img class="hover" src="img/marche-fort-france-72.jpg" alt="Forest" width="625" height="300">
+        </div>
+      <div><h1>Marché de Fort de France</h1></div>
+      <div><h1>montagne-pelee</h1></div>
+      <div><img class="hover" src="img/montagne-pelee-72.jpg" alt="Forest" width="625" height="300">
+      </div>
+      <div><img class="hover" src="img/village-des-anses-d’arlets-72.jpg" alt="Forest" width="625" height="300">
+      </div>
+      <div><h1>village-des-anses-d’arlet</h1></div>
+    </div>  
+    <div class="footer">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-skype"></a>
+      <a href="#" class="fa fa-yahoo"></a>
+
+      
+    </div>
+      
+  </div>
+</body>
+</html>

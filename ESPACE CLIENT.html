@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Stylla.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="js/bootstrap.min.js"> 
+  <title>ESPACE CLIENT</title>
+</head>
+<script>
+  function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('c5').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 1000);
+  }
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
+  </script>
+  
+  </head>
+ <body onload="startTime()">
+  <div class="grid-container">
+    <div class="grid-item1">
+      <div class="nested"><img class="img" src="img/images.jpeg" alt="Forest" width="300" height="100">
+      </div>
+      <div class="nested"><img src="img/tel.jpeg" alt="Northern Lights" width="50" height="30">
+        <label for="" style="color: brown;">+21690392095</label>
+      </div>
+      <div class="nested"><img class="hover" src="img/time.png "alt="Mountains" width="50" height="30"> 
+        <label class="hover" for="hover" style="color: brown;">En Martinique, il est</label>
+        <label class="hover" for="" id="c5" style="color: brown;"></label>
+      </div>
+      
+      
+    </div>
+    <div class="grid-item2">
+      <nav>
+       <ul>
+         <li><a class="active" href="#home">Home</a></li>
+         <li><a href="Accueil.html">Accueil</a></li>
+         <li><a href="Contact.html">Contact</a></li>
+         <li><a href="ESPACE CLIENT.html">ESPACE Clients</a></li>
+         <li><a href="Lieux De Livraison.html">Lieux De Livraison</a></li>
+         <li><a href="NOTRE PARC.html">Notre Parc</a></li>
+       </ul>
+     </nav>
+    </div>
+    <div class="grid-item3-1">
+      <h1>Identifiez vous</h1><br>
+      <div class="lib"><h2>Votre mail :</h2> <br>
+      						<input type="texte" id="connexion_id">
+						<div class="lib">Mot de passe :</div><br>
+						<input type="password" id="connexion_pass"><br>
+						<input type="button" onclick="" value="Connexion">
+          </div>
+            <div id="oubli">
+              <div class="lib">Entrez votre adresse e-mail votre mot de passe vous sera envoyé :</div>
+              <input type="texte" id="oubli_mail">
+              <div ><input type="button" class="button" onclick="membre_oubli();" value="Envoyer"></div>
+              </div>
+    </div>
+
+  </div>
+</body>
+</html>
